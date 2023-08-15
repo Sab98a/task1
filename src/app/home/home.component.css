@@ -1,0 +1,37 @@
+
+
+.red-text
+{
+    color:red;
+}
+
+.green-text
+{
+    color:green;
+}
+
+.pass-badge
+{
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+.fail-badge
+{
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+.table, th, td {
+    border: 1px solid;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+  }
+

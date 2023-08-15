@@ -1,0 +1,24 @@
+<br><br>
+<h1 style="text-align: center; color: rgb(21, 9, 143);">Infomation Management System</h1>
+
+
+<div class="w3-sidebar w3-bar-block" style="width:25%; border-color: blue; border-width: 200px; border-radius: 0%; padding-left: 30px; padding-top: 30px;">
+  
+
+  
+</div>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+ 
+      <div class="card mx-auto card text-center" style="width: 40% ; margin: auto; ">
+      <img class="card-img-top" src="https://www.euritas.eu/wp-content/uploads/2018/07/Logo-MIS-01-neue-Farben-V2-3-1024x859.png" alt="Card image" style="width: 100%;height: 300px; padding-left: 100PX; padding-right: 100PX;padding-top: 30px; border-radius: 20rem;" >
+      <div class="card-body">
+        <h4 class="card-title"> Students <span style="color: rgb(14, 13, 13);">{{ details }}</span></h4>
+        <p class="card-text"><input type="text" (input)="onStudentNameChange($event)" placeholder="Please write name of student"></p>
+        <h5 *ngIf="studentName" class="card-title">Student's Name: <span style="color: red;">{{ studentName }}</span></h5>
+        <a style="width: 300px; color: rgb(235, 254, 232);" class="btn btn-primary" routerLink="home">Go to student mark</a>
+      </div>
+    </div>
+  

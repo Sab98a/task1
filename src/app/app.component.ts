@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mark';
+  
+    details:string = 'Details';
+    studentName:string = '';
+  
+  
+  onStudentNameChange(event:Event): void{
+   this.studentName = (event.target as HTMLInputElement).value;
+  }
 }

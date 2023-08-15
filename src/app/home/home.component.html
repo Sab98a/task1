@@ -1,0 +1,40 @@
+<div style="padding-top:5000px;"    class="Container" [ngStyle]="getStyle()"> 
+
+    <h1 style="text-align: center; font-weight: 400; color:rgb(43, 17, 139)" >Students Marks</h1>
+    <br>
+    <table class="table">
+<thead>
+    <tr>
+      <th class="bi bi-person-circle" >Name </th>
+      <th class="bi bi-envelope" >Email</th>
+      <th class="bi bi-123" > Marks(Out of 100)</th>
+      <th class="bi bi-trophy-fill" >PASS/FAIL</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let Students of studentList"  >  
+
+        <td>{{ Students.Name }}</td>  
+
+        <td>{{ Students.Email }}</td>  
+
+        <td [ngClass]="getMarkColor(Students.Mark)">{{ Students.Mark }}</td>  
+
+        <td>
+
+          <span *ngIf="Students.Mark >= 50" class="pass-badge">PASS</span>
+
+          <span *ngIf="Students.Mark < 50" class="fail-badge">FAIL</span>
+
+
+  </td>
+
+</tr>
+
+ </tbody>
+
+
+    </table>
+    
+</div>
+
